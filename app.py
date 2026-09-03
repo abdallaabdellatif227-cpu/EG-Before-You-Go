@@ -1149,12 +1149,36 @@ div[data-testid="stTextInput"] {
     font-size: 21px !important;
     font-weight: 750 !important;
     line-height: 1.55 !important;
+    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
+    margin-top: 18px !important;
+    padding-top: 14px !important;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    opacity: 0.8;
+}
 }
 
 .big-category .stButton > button [data-testid="stMarkdownContainer"] p {
     font-size: 23px !important;
     height: auto;
     font-weight: 800 !important;
+    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
+    margin-top: 18px !important;
+    padding-top: 14px !important;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    opacity: 0.8;
+    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
+    margin-top: 18px !important;
+    padding-top: 14px !important;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    opacity: 0.8;
+}
+}
 }
 
 .verified-badge {
