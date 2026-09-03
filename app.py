@@ -1153,6 +1153,7 @@ div[data-testid="stTextInput"] {
 
 .big-category .stButton > button [data-testid="stMarkdownContainer"] p {
     font-size: 23px !important;
+    height: auto;
     font-weight: 800 !important;
 }
 
@@ -1315,7 +1316,7 @@ div[data-testid="stTextInput"] {
 
 .big-category .stButton > button {
     width: 100% !important;
-    height: 160px;
+    height: auto;
     min-height: 160px;
 
     border-radius: 24px;
