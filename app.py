@@ -1149,36 +1149,23 @@ div[data-testid="stTextInput"] {
     font-size: 21px !important;
     font-weight: 750 !important;
     line-height: 1.55 !important;
-    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
-    margin-top: 18px !important;
-    padding-top: 14px !important;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    font-size: 15px !important;
-    font-weight: 500 !important;
-    opacity: 0.8;
-}
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
 }
 
 .big-category .stButton > button [data-testid="stMarkdownContainer"] p {
     font-size: 23px !important;
-    height: auto;
     font-weight: 800 !important;
-    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
+}
+
+.big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
     margin-top: 18px !important;
     padding-top: 14px !important;
     border-top: 1px solid rgba(255,255,255,0.15);
     font-size: 15px !important;
     font-weight: 500 !important;
     opacity: 0.8;
-    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
-    margin-top: 18px !important;
-    padding-top: 14px !important;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    font-size: 15px !important;
-    font-weight: 500 !important;
-    opacity: 0.8;
-}
-}
 }
 
 .verified-badge {
@@ -1608,25 +1595,12 @@ div[class*="st-key-floating_chat_button"] .stButton > button:hover {
     box-shadow: 0 16px 42px rgba(0,0,0,0.40), 0 0 0 7px rgba(0,210,190,0.12) !important;
 }
 
-@media (max-width: 900px) {
-    div[class*="st-key-floating_chat_button"] {
-        right: 18px !important;
-        bottom: 18px !important;
-        width: 60px !important;
-        height: 60px !important;
-    }
 
-    div[class*="st-key-floating_chat_button"] .stButton {
-        width: 60px !important;
-    }
+/* =========================================================
+   FLOATING SUGGESTION BUTTON
+   ========================================================= */
 
-    div[class*="st-key-floating_chat_button"] .stButton > button {
-        width: 60px !important;
-        height: 60px !important;
-        min-height: 60px !important;
-        font-size: 25px !important;
-
-        div[class*="st-key-floating_suggestion_button"] {
+div[class*="st-key-floating_suggestion_button"] {
     position: fixed !important;
     right: 28px !important;
     bottom: 112px !important;
@@ -1665,6 +1639,42 @@ div[class*="st-key-floating_suggestion_button"] .stLinkButton p {
     display: none !important;
 }
 
+@media (max-width: 900px) {
+    div[class*="st-key-floating_chat_button"] {
+        right: 18px !important;
+        bottom: 18px !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    div[class*="st-key-floating_chat_button"] .stButton {
+        width: 60px !important;
+    }
+
+    div[class*="st-key-floating_chat_button"] .stButton > button {
+        width: 60px !important;
+        height: 60px !important;
+        min-height: 60px !important;
+        font-size: 25px !important;
+    }
+
+    div[class*="st-key-floating_suggestion_button"] {
+        right: 18px !important;
+        bottom: 92px !important;
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    div[class*="st-key-floating_suggestion_button"] .stLinkButton {
+        width: 48px !important;
+    }
+
+    div[class*="st-key-floating_suggestion_button"] .stLinkButton > a {
+        width: 48px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        font-size: 20px !important;
+    }
 }
 
 
@@ -1736,17 +1746,34 @@ if st.session_state.get("light_mode", False):
         background: linear-gradient(180deg, #f7f5f0 0%, #fbfaf8 100%);
     }
 
-.stApp h1,
-.stApp h2,
-.stApp h3,
-.stApp p,
-.stApp label {
-    color: #1B2E4F !important;
-}
+    .stApp h1,
+    .stApp h2,
+    .stApp h3,
+    .stApp h4,
+    .stApp p,
+    .stApp label,
+    .stApp span,
+    .stApp li,
+    .stApp div[data-testid="stCaptionContainer"],
+    .stApp div[data-testid="stMarkdownContainer"],
+    .stApp div[data-testid="stSelectbox"] label,
+    .stApp div[data-testid="stRadio"] label,
+    .stApp div[data-testid="stAlert"] {
+        color: #1B2E4F !important;
+    }
+
+    div[data-testid="stTextInput"] input::placeholder {
+        color: rgba(27, 46, 79, 0.45) !important;
+    }
+
+    div[data-testid="stAlert"] {
+        background: rgba(27, 46, 79, 0.06) !important;
+        border-color: rgba(27, 46, 79, 0.15) !important;
+    }
 
     .stButton > button {
         color: #1B2E4F;
-        border-color: rgba(27, 46, 79, 0.14);
+        border-color: rgba(32, 49, 58, 0.14);
         background: linear-gradient(145deg, rgba(255,255,255,0.90), rgba(238,233,222,0.75));
         box-shadow: 0 10px 26px rgba(27, 46, 79, 0.08);
     }
@@ -3645,7 +3672,7 @@ elif st.session_state.page == "chatbot":
 
 
 # ============================================================
-# FLOATING CHAT BUTTON
+# FLOATING BUTTONS (chat + suggestions)
 # ============================================================
 
 if st.session_state.page != "chatbot":
@@ -3656,7 +3683,6 @@ if st.session_state.page != "chatbot":
     ):
         go("chatbot")
 
-if st.session_state.page != "chatbot":
     st.link_button(
         "💡",
         "https://docs.google.com/forms/d/e/1FAIpQLSeNLD0K0U2VjaHNVGuBiJdC1pPrnYCwngDEhE9xB-eJHCAJOA/viewform?usp=publish-editor",
