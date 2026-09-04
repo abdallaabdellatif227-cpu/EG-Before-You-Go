@@ -483,63 +483,65 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed"
 )
-st.markdown("""
-<style>
-/* إلغاء أي transform على العناصر اللي بتحبس الـ fixed positioning */
-.stApp,
-[data-testid="stAppViewContainer"],
-[data-testid="stMain"],
-.main,
-.block-container {
-    transform: none !important;
-}
+if "splash_shown" not in st.session_state:
+    st.session_state.splash_shown = True
+    st.markdown("""
+    <style>
+    /* إلغاء أي transform على العناصر اللي بتحبس الـ fixed positioning */
+    .stApp,
+    [data-testid="stAppViewContainer"],
+    [data-testid="stMain"],
+    .main,
+    .block-container {
+        transform: none !important;
+    }
 
-@keyframes spin-arrow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-@keyframes fade-out-splash {
-    0%, 75% { opacity: 1; visibility: visible; }
-    100% { opacity: 0; visibility: hidden; }
-}
-#splash-screen {
-    position: fixed !important;
-    top: 0 !important; left: 0 !important;
-    width: 100vw !important; height: 100vh !important;
-    z-index: 2147483647 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #06101c 0%, #0a1929 50%, #071522 100%);
-    animation: fade-out-splash 1.8s ease forwards;
-    pointer-events: none;
-}
-#splash-compass {
-    width: 70px; height: 70px;
-    border: 4px solid #B8924A;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-}
-#splash-arrow {
-    width: 0; height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 26px solid #B8924A;
-    animation: spin-arrow 1s linear infinite;
-}
-#splash-text {
-    margin-top: 18px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-}
-</style>
-<div id="splash-screen">
-    <div id="splash-compass"><div id="splash-arrow"></div></div>
-    <div id="splash-text">قبل ما تروح</div>
-</div>
-""", unsafe_allow_html=True)
+    @keyframes spin-arrow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    @keyframes fade-out-splash {
+        0%, 75% { opacity: 1; visibility: visible; }
+        100% { opacity: 0; visibility: hidden; }
+    }
+    #splash-screen {
+        position: fixed !important;
+        top: 0 !important; left: 0 !important;
+        width: 100vw !important; height: 100vh !important;
+        z-index: 2147483647 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #06101c 0%, #0a1929 50%, #071522 100%);
+        animation: fade-out-splash 1.8s ease forwards;
+        pointer-events: none;
+    }
+    #splash-compass {
+        width: 70px; height: 70px;
+        border: 4px solid #B8924A;
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+    }
+    #splash-arrow {
+        width: 0; height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 26px solid #B8924A;
+        animation: spin-arrow 1s linear infinite;
+    }
+    #splash-text {
+        margin-top: 18px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    </style>
+    <div id="splash-screen">
+        <div id="splash-compass"><div id="splash-arrow"></div></div>
+        <div id="splash-text">قبل ما تروح</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # ============================================================
 # SESSION STATE
@@ -1149,36 +1151,23 @@ div[data-testid="stTextInput"] {
     font-size: 21px !important;
     font-weight: 750 !important;
     line-height: 1.55 !important;
-    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
-    margin-top: 18px !important;
-    padding-top: 14px !important;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    font-size: 15px !important;
-    font-weight: 500 !important;
-    opacity: 0.8;
-}
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
 }
 
 .big-category .stButton > button [data-testid="stMarkdownContainer"] p {
     font-size: 23px !important;
-    height: auto;
     font-weight: 800 !important;
-    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
+}
+
+.big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
     margin-top: 18px !important;
     padding-top: 14px !important;
     border-top: 1px solid rgba(255,255,255,0.15);
     font-size: 15px !important;
     font-weight: 500 !important;
     opacity: 0.8;
-    .big-category .stButton > button [data-testid="stMarkdownContainer"] p:last-child {
-    margin-top: 18px !important;
-    padding-top: 14px !important;
-    border-top: 1px solid rgba(255,255,255,0.15);
-    font-size: 15px !important;
-    font-weight: 500 !important;
-    opacity: 0.8;
-}
-}
 }
 
 .verified-badge {
@@ -1608,25 +1597,12 @@ div[class*="st-key-floating_chat_button"] .stButton > button:hover {
     box-shadow: 0 16px 42px rgba(0,0,0,0.40), 0 0 0 7px rgba(0,210,190,0.12) !important;
 }
 
-@media (max-width: 900px) {
-    div[class*="st-key-floating_chat_button"] {
-        right: 18px !important;
-        bottom: 18px !important;
-        width: 60px !important;
-        height: 60px !important;
-    }
 
-    div[class*="st-key-floating_chat_button"] .stButton {
-        width: 60px !important;
-    }
+/* =========================================================
+   FLOATING SUGGESTION BUTTON
+   ========================================================= */
 
-    div[class*="st-key-floating_chat_button"] .stButton > button {
-        width: 60px !important;
-        height: 60px !important;
-        min-height: 60px !important;
-        font-size: 25px !important;
-
-        div[class*="st-key-floating_suggestion_button"] {
+div[class*="st-key-floating_suggestion_button"] {
     position: fixed !important;
     right: 28px !important;
     bottom: 112px !important;
@@ -1665,6 +1641,42 @@ div[class*="st-key-floating_suggestion_button"] .stLinkButton p {
     display: none !important;
 }
 
+@media (max-width: 900px) {
+    div[class*="st-key-floating_chat_button"] {
+        right: 18px !important;
+        bottom: 18px !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    div[class*="st-key-floating_chat_button"] .stButton {
+        width: 60px !important;
+    }
+
+    div[class*="st-key-floating_chat_button"] .stButton > button {
+        width: 60px !important;
+        height: 60px !important;
+        min-height: 60px !important;
+        font-size: 25px !important;
+    }
+
+    div[class*="st-key-floating_suggestion_button"] {
+        right: 18px !important;
+        bottom: 92px !important;
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    div[class*="st-key-floating_suggestion_button"] .stLinkButton {
+        width: 48px !important;
+    }
+
+    div[class*="st-key-floating_suggestion_button"] .stLinkButton > a {
+        width: 48px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        font-size: 20px !important;
+    }
 }
 
 
@@ -1736,17 +1748,34 @@ if st.session_state.get("light_mode", False):
         background: linear-gradient(180deg, #f7f5f0 0%, #fbfaf8 100%);
     }
 
-.stApp h1,
-.stApp h2,
-.stApp h3,
-.stApp p,
-.stApp label {
-    color: #1B2E4F !important;
-}
+    .stApp h1,
+    .stApp h2,
+    .stApp h3,
+    .stApp h4,
+    .stApp p,
+    .stApp label,
+    .stApp span,
+    .stApp li,
+    .stApp div[data-testid="stCaptionContainer"],
+    .stApp div[data-testid="stMarkdownContainer"],
+    .stApp div[data-testid="stSelectbox"] label,
+    .stApp div[data-testid="stRadio"] label,
+    .stApp div[data-testid="stAlert"] {
+        color: #1B2E4F !important;
+    }
+
+    div[data-testid="stTextInput"] input::placeholder {
+        color: rgba(27, 46, 79, 0.45) !important;
+    }
+
+    div[data-testid="stAlert"] {
+        background: rgba(27, 46, 79, 0.06) !important;
+        border-color: rgba(27, 46, 79, 0.15) !important;
+    }
 
     .stButton > button {
         color: #1B2E4F;
-        border-color: rgba(27, 46, 79, 0.14);
+        border-color: rgba(32, 49, 58, 0.14);
         background: linear-gradient(145deg, rgba(255,255,255,0.90), rgba(238,233,222,0.75));
         box-shadow: 0 10px 26px rgba(27, 46, 79, 0.08);
     }
@@ -1810,9 +1839,6 @@ with st.sidebar:
 
     if st.button(f"📄 {text('documents')}", key="nav_documents", use_container_width=True):
         go("documents")
-
-    if st.button(f"🏢 {text('services')}", key="nav_services", use_container_width=True):
-        go("services")
 
     if st.button(f"🩺 {text('medical')}", key="nav_medical", use_container_width=True):
         go("medical")
@@ -3623,7 +3649,7 @@ elif st.session_state.page == "chatbot":
 
 
 # ============================================================
-# FLOATING CHAT BUTTON
+# FLOATING BUTTONS (chat + suggestions)
 # ============================================================
 
 if st.session_state.page != "chatbot":
@@ -3634,7 +3660,6 @@ if st.session_state.page != "chatbot":
     ):
         go("chatbot")
 
-if st.session_state.page != "chatbot":
     st.link_button(
         "💡",
         "https://docs.google.com/forms/d/e/1FAIpQLSeNLD0K0U2VjaHNVGuBiJdC1pPrnYCwngDEhE9xB-eJHCAJOA/viewform?usp=publish-editor",
