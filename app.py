@@ -559,6 +559,9 @@ if "language" not in st.session_state:
 if "light_mode" not in st.session_state:
     st.session_state.light_mode = False
 
+if "comfort_mode" not in st.session_state:
+    st.session_state.comfort_mode = False
+
 if "page_history" not in st.session_state:
     st.session_state.page_history = []
 
@@ -1028,7 +1031,7 @@ st.markdown("""
 }
 
 .block-container {
-    direction: ltr;
+    direction: rtl;
     text-align: right;
 }
 
@@ -1637,10 +1640,6 @@ div[class*="st-key-floating_suggestion_button"] .stLinkButton > a:hover {
     transform: scale(1.08) !important;
 }
 
-div[class*="st-key-floating_suggestion_button"] .stLinkButton p {
-    display: none !important;
-}
-
 @media (max-width: 900px) {
     div[class*="st-key-floating_chat_button"] {
         right: 18px !important;
@@ -1704,7 +1703,44 @@ div[class*="st-key-floating_suggestion_button"] .stLinkButton p {
         min-height: 115px;
         font-size: 16px;
     }
+
+    .block-container {
+        padding-left: 0.9rem !important;
+        padding-right: 0.9rem !important;
+        padding-top: 0.8rem !important;
+    }
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    .stSubheader, div[data-testid="stSubheader"] {
+        font-size: 17px !important;
+    }
+
+    div[data-testid="stTextInput"] input {
+        font-size: 15px !important;
+        padding: 12px !important;
+    }
+
+    section[data-testid="stSidebar"] img {
+        width: 100px !important;
+    }
+
+    div[data-testid="stColumn"] {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
 }
+
 
  </style>
 """, unsafe_allow_html=True)
@@ -1800,6 +1836,102 @@ if st.session_state.get("light_mode", False):
 
 
 # ============================================================
+# COMFORT MODE (eye-friendly palette — works with dark or light)
+# ============================================================
+
+if st.session_state.get("comfort_mode", False) and not st.session_state.get("light_mode", False):
+    # مريح للعين + غامق: بني/كهرماني دافئ
+    st.markdown("""
+    <style>
+    .stApp {
+        background:
+            radial-gradient(circle at 8% 8%, rgba(184, 146, 74, 0.10), transparent 32%),
+            radial-gradient(circle at 92% 18%, rgba(120, 90, 50, 0.12), transparent 36%),
+            linear-gradient(135deg, #1c140d 0%, #221a12 50%, #150f0a 100%);
+        color: #EDEAE3 !important;
+    }
+
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #1c140d 0%, #140f09 100%);
+    }
+
+    #splash-screen {
+        background: linear-gradient(135deg, #1c140d 0%, #221a12 50%, #150f0a 100%) !important;
+    }
+
+    .stApp h1, .stApp h2, .stApp h3, .stApp p, .stApp label, .stApp span, .stApp li {
+        color: #EDEAE3 !important;
+    }
+
+    .stButton > button {
+        color: #EDEAE3;
+        background: linear-gradient(145deg, rgba(237,234,227,0.10), rgba(237,234,227,0.045));
+        border-color: rgba(237,234,227,0.13);
+    }
+
+    .stButton > button:hover {
+        border-color: rgba(184, 146, 74, 0.6);
+    }
+
+    div[data-testid="stTextInput"] input {
+        color: #EDEAE3;
+        background: rgba(237,234,227,0.075);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+elif st.session_state.get("comfort_mode", False) and st.session_state.get("light_mode", False):
+    # مريح للعين + فاتح: ورقي/سيبيا دافئ بدل الأبيض والكحلي القاسي
+    st.markdown("""
+    <style>
+    .stApp {
+        background:
+            radial-gradient(circle at 8% 8%, rgba(184, 146, 74, 0.10), transparent 32%),
+            radial-gradient(circle at 92% 18%, rgba(120, 90, 50, 0.08), transparent 36%),
+            linear-gradient(135deg, #f7ecd9 0%, #f2e5cd 52%, #f5ecda 100%) !important;
+        color: #4A3826 !important;
+    }
+
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #f2e5cd 0%, #f7ecd9 100%) !important;
+    }
+
+    .stApp h1, .stApp h2, .stApp h3, .stApp h4,
+    .stApp p, .stApp label, .stApp span, .stApp li,
+    .stApp div[data-testid="stCaptionContainer"],
+    .stApp div[data-testid="stMarkdownContainer"],
+    .stApp div[data-testid="stAlert"] {
+        color: #4A3826 !important;
+    }
+
+    .stButton > button {
+        color: #4A3826 !important;
+        border-color: rgba(74, 56, 38, 0.14) !important;
+        background: linear-gradient(145deg, rgba(255,252,244,0.90), rgba(240,228,200,0.75)) !important;
+    }
+
+    .stButton > button:hover {
+        border-color: rgba(184, 146, 74, 0.6) !important;
+    }
+
+    div[data-testid="stTextInput"] input {
+        color: #4A3826 !important;
+        background: rgba(255,252,244,0.85) !important;
+        border-color: rgba(74, 56, 38, 0.16) !important;
+    }
+
+    div[data-testid="stTextInput"] input::placeholder {
+        color: rgba(74, 56, 38, 0.45) !important;
+    }
+
+    .footer {
+        color: #8a7358 !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
+# ============================================================
 # SIDEBAR
 # ============================================================
 
@@ -1827,6 +1959,16 @@ with st.sidebar:
 
     if light_mode != st.session_state.light_mode:
         st.session_state.light_mode = light_mode
+        st.rerun()
+
+    comfort_mode = st.toggle(
+        "🌿 وضع مريح للعين" if st.session_state.language == "ar" else "🌿 Eye comfort mode",
+        value=st.session_state.comfort_mode,
+        key="comfort_mode_toggle"
+    )
+
+    if comfort_mode != st.session_state.comfort_mode:
+        st.session_state.comfort_mode = comfort_mode
         st.rerun()
 
     st.divider()
@@ -3246,9 +3388,31 @@ elif st.session_state.page == "document_details":
 
         st.title("🎓 مستندات تعليمية")
 
-        st.info(
-            "هنضيف الخدمات التعليمية واحدة واحدة."
+        st.write(
+            "اختار الخدمة التعليمية اللي عايز تعرف تفاصيلها."
         )
+
+        st.divider()
+
+        education_keys = ["تنسيق المدارس الثانوية"]
+        additional_services = SERVICE_DATA.get("additional_services", {})
+
+        found_any = False
+
+        for edu_key in education_keys:
+            service = additional_services.get(edu_key)
+            if service:
+                found_any = True
+                if st.button(
+                    f"{service.get('icon', '🎓')}\n\n{service['title']}",
+                    key=f"edu_link_{edu_key}",
+                    use_container_width=True
+                ):
+                    st.session_state.selected_document = f"additional:{edu_key}"
+                    go("document_details")
+
+        if not found_any:
+            st.info("هنضيف الخدمات التعليمية قريبًا، بعد التحقق من المصادر.")
 
 
     # ========================================================
@@ -3259,9 +3423,40 @@ elif st.session_state.page == "document_details":
 
         st.title("📜 شهادات ومستندات")
 
-        st.info(
-            "هنضيف الشهادات والخدمات هنا."
+        st.write(
+            "اختار المستند اللي عايز تعرف تفاصيله."
         )
+
+        st.divider()
+
+        certificate_keys = [
+            "الفيش الجنائي",
+            "شهادة الميلاد",
+            "شهادة التحركات",
+            "القيد العائلي",
+        ]
+        additional_services = SERVICE_DATA.get("additional_services", {})
+
+        matching_items = [
+            (key, additional_services[key])
+            for key in certificate_keys
+            if key in additional_services
+        ]
+
+        if matching_items:
+            cert_columns = st.columns(2)
+            for index, (cert_key, service) in enumerate(matching_items):
+                column = cert_columns[index % 2]
+                with column:
+                    if st.button(
+                        f"{service.get('icon', '📜')}\n\n{service['title']}",
+                        key=f"cert_link_{cert_key}",
+                        use_container_width=True
+                    ):
+                        st.session_state.selected_document = f"additional:{cert_key}"
+                        go("document_details")
+        else:
+            st.info("هنضيف الشهادات والمستندات قريبًا، بعد التحقق من المصادر.")
 
 
 # ============================================================
@@ -3654,14 +3849,16 @@ elif st.session_state.page == "chatbot":
 
 if st.session_state.page != "chatbot":
     if st.button(
-        "💬",
+        "🤖",
         key="floating_chat_button",
         help="افتح المساعد الذكي",
     ):
         go("chatbot")
 
     st.link_button(
-        "💡",
+        "📩",
         "https://docs.google.com/forms/d/e/1FAIpQLSeNLD0K0U2VjaHNVGuBiJdC1pPrnYCwngDEhE9xB-eJHCAJOA/viewform?usp=publish-editor",
         key="floating_suggestion_button",
+        help="اقترح تعديل أو ميزة جديدة",
     )
+    
