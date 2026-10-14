@@ -107,22 +107,22 @@ DEFAULT_JOB_DATA = {
 }
 
 JOB_MARKET_SEED_DATA = {
-    "data_analytics": {
-        "vodafone_data_analyst": {
-            "id": "vodafone_data_analyst",
-            "title": "Data Analyst (VOIS)",
-            "company": "Vodafone / VOIS",
+    "devops": {
+        "vodafone_devops_engineer": {
+            "id": "vodafone_devops_engineer",
+            "title": "DevOps Engineer",
+            "company": "Vodafone Egypt",
             "companyLogo": None,
-            "category": "Data & Analytics",
-            "subcategory": "Data Analytics",
+            "category": "DevOps",
+            "subcategory": "Infrastructure & Automation",
             "location": "Cairo, Egypt",
             "country": "Egypt",
             "city": "Cairo",
             "workType": "On-site",
             "employmentType": "Full Time",
             "contractType": "Permanent",
-            "remoteType": "Hybrid",
-            "postedDate": "2026-08-25",
+            "remoteType": "On-site",
+            "postedDate": None,
             "applicationDeadline": None,
             "salary": "Not disclosed",
             "salaryMin": None,
@@ -131,116 +131,199 @@ JOB_MARKET_SEED_DATA = {
             "salaryPeriod": None,
             "salaryType": "Not disclosed",
             "salarySource": "Not disclosed",
-            "experienceLevel": "Mid-Senior",
-            "experienceYears": "3+",
-            "education": "Bachelor's degree in Engineering, Information Technology or related field",
+            "experienceLevel": "Mid",
+            "experienceYears": "Not disclosed",
+            "education": "Not disclosed",
             "requirements": [
-                "Engineering / Information Technology or related degree",
-                "Minimum 3 years experience in data engineering, analytics or related technical domains",
-                "Google Cloud Platform",
-                "Tableau",
-                "Grafana",
-                "Power BI",
-                "Kibana",
-                "Python",
-                "APIs",
-                "Data pipelines",
-                "Data warehouses",
-                "AI/ML knowledge is advantageous"
+                "System integration and implementation of DevOps tools",
+                "Kubernetes and private cloud platform experience",
+                "Full responsibility for migration and upgrading to new releases",
+                "Service management and prioritizing multiple open cases against agreed SLAs"
             ],
-            "skills": ["SQL", "Python", "Tableau", "Power BI", "GCP", "APIs", "Data Pipelines"],
+            "skills": ["DevOps Tools", "Kubernetes", "Cloud", "Service Management"],
             "responsibilities": [
-                "Analyze and interpret operational and business data",
-                "Build dashboards and reporting solutions",
-                "Support data pipelines and analytics workflows",
-                "Partner with business and technical teams to improve data quality"
+                "Lead and deliver production-ready Kubernetes-based solutions hosting applications for multiple clients",
+                "Provide global IT integration, support, and DevOps leadership",
+                "Manage migrations and upgrades across DevOps tooling"
             ],
             "documentsRequired": ["CV"],
             "applicationMethod": "Apply Online",
             "contactEmail": None,
             "contactPhone": None,
             "contactPerson": None,
-            "applyUrl": "https://careers.vodafone.com/egypt/",
-            "sourceUrl": "https://careers.vodafone.com/egypt/",
-            "sourceName": "Vodafone Careers",
+            "applyUrl": "https://wuzzuf.net/jobs/p/160789-DevOps-Engineer-Vodafone-Cairo-Egypt",
+            "sourceUrl": "https://wuzzuf.net/jobs/p/160789-DevOps-Engineer-Vodafone-Cairo-Egypt",
+            "sourceName": "Wuzzuf",
             "status": "active",
             "verified": True,
-            "lastVerified": "2026-08-31",
-            "description": "Data Analyst role focused on data analysis, dashboards, APIs, cloud environments, and data quality across business and technical workflows.",
-            "tags": ["data", "analytics", "gcp", "python", "tableau", "vodafone"]
+            "lastVerified": "2026-09-26",
+            "description": "DevOps role at Vodafone Egypt focused on Kubernetes-based private cloud platforms, tool integration, and release management.",
+            "tags": ["devops", "kubernetes", "cloud", "vodafone"]
         },
-        "wfp_data_analyst_sc5": {
-            "id": "wfp_data_analyst_sc5",
-            "title": "Data Analyst SC5",
-            "company": "World Food Programme (WFP)",
+        "vois_senior_devops_engineer": {
+            "id": "vois_senior_devops_engineer",
+            "title": "Senior DevOps Engineer (VOIS)",
+            "company": "Vodafone / VOIS",
             "companyLogo": None,
-            "category": "Data & Analytics",
-            "subcategory": "Data Analysis",
-            "location": "Cairo, Egypt",
+            "category": "DevOps",
+            "subcategory": "Cloud & Data Infrastructure",
+            "location": "Giza, Egypt",
             "country": "Egypt",
-            "city": "Cairo",
-            "workType": "On-site",
+            "city": "Giza",
+            "workType": "Hybrid",
             "employmentType": "Full Time",
-            "contractType": "Contract",
-            "remoteType": "On-site",
-            "postedDate": "2026-08-01",
+            "contractType": "Permanent",
+            "remoteType": "Hybrid",
+            "postedDate": None,
             "applicationDeadline": None,
-            "salary": "Official compensation information only if available in the vacancy",
+            "salary": "Not disclosed",
             "salaryMin": None,
             "salaryMax": None,
             "salaryCurrency": "EGP",
             "salaryPeriod": None,
             "salaryType": "Not disclosed",
-            "salarySource": "Official",
-            "experienceLevel": "Mid",
-            "experienceYears": "2+",
-            "education": "University degree in Computer Science, Information Systems, Statistics, Economics or related field",
+            "salarySource": "Not disclosed",
+            "experienceLevel": "Senior",
+            "experienceYears": "Not disclosed",
+            "education": "Not disclosed",
             "requirements": [
-                "University degree in Computer Science, Information Systems, Statistics, Economics or related field",
-                "Minimum 2 years relevant experience",
-                "SQL",
-                "Tableau",
-                "Data modeling",
-                "Data quality",
-                "Data analysis"
+                "Design and maintain scalable data and software solutions on Google Cloud Platform",
+                "Modern DevOps practices for system performance and security"
             ],
-            "skills": ["SQL", "Tableau", "Data Modeling", "Data Quality", "Data Analysis"],
+            "skills": ["GCP", "DevOps", "Cloud Infrastructure", "Automation"],
             "responsibilities": [
-                "Support data analysis and reporting activities",
-                "Maintain quality and consistency of datasets",
-                "Provide analysis for program and operational decisions"
+                "Enhance software lifecycle management in a private cloud setting",
+                "Improve system performance and security through DevOps practices"
             ],
-            "documentsRequired": ["CV", "Cover Letter"],
-            "applicationMethod": "WFP Workday portal",
+            "documentsRequired": ["CV"],
+            "applicationMethod": "Apply Online",
             "contactEmail": None,
             "contactPhone": None,
             "contactPerson": None,
-            "applyUrl": "https://www.wfp.org/careers",
-            "sourceUrl": "https://www.wfp.org/careers",
-            "sourceName": "WFP Careers",
+            "applyUrl": "https://jobs.vodafone.com/careers/job/563018683862123-senior-devops-engineer-vois-giza-egypt",
+            "sourceUrl": "https://jobs.vodafone.com/careers/job/563018683862123-senior-devops-engineer-vois-giza-egypt",
+            "sourceName": "Vodafone Careers",
             "status": "active",
             "verified": True,
-            "lastVerified": "2026-08-31",
-            "description": "Data Analyst role responsible for working with data quality, reporting, and analytical support for WFP program operations.",
-            "tags": ["wfp", "data", "analytics", "tableau", "sql"]
-        }
-    },
-    "finance_accounting": {
-        "itida_accountant": {
-            "id": "itida_accountant",
-            "title": "Accountant",
-            "company": "ITIDA",
+            "lastVerified": "2026-09-26",
+            "description": "Senior DevOps role at VOIS (Vodafone Intelligent Solutions) focused on GCP-based data and software solutions.",
+            "tags": ["devops", "gcp", "cloud", "vois", "vodafone"]
+        },
+        "vois_devops_engineer": {
+            "id": "vois_devops_engineer",
+            "title": "DevOps Engineer (VOIS)",
+            "company": "Vodafone / VOIS",
             "companyLogo": None,
-            "category": "Finance / Accounting",
-            "subcategory": "Accounting",
-            "location": "Smart Village, Giza",
+            "category": "DevOps",
+            "subcategory": "Cloud & Data Infrastructure",
+            "location": "Giza, Egypt",
             "country": "Egypt",
             "city": "Giza",
+            "workType": "Hybrid",
+            "employmentType": "Full Time",
+            "contractType": "Permanent",
+            "remoteType": "Hybrid",
+            "postedDate": None,
+            "applicationDeadline": None,
+            "salary": "Not disclosed",
+            "salaryMin": None,
+            "salaryMax": None,
+            "salaryCurrency": "EGP",
+            "salaryPeriod": None,
+            "salaryType": "Not disclosed",
+            "salarySource": "Not disclosed",
+            "experienceLevel": "Mid",
+            "experienceYears": "Not disclosed",
+            "education": "Not disclosed",
+            "requirements": [
+                "DevOps tooling and automation experience",
+                "Cloud infrastructure fundamentals"
+            ],
+            "skills": ["DevOps", "Cloud", "Automation"],
+            "responsibilities": [
+                "Support DevOps operations for VOIS-managed platforms"
+            ],
+            "documentsRequired": ["CV"],
+            "applicationMethod": "Apply Online",
+            "contactEmail": None,
+            "contactPhone": None,
+            "contactPerson": None,
+            "applyUrl": "https://jobs.vodafone.com/careers/job/563018681427827-devops-engineer-vois-giza-egypt",
+            "sourceUrl": "https://jobs.vodafone.com/careers/job/563018681427827-devops-engineer-vois-giza-egypt",
+            "sourceName": "Vodafone Careers",
+            "status": "active",
+            "verified": True,
+            "lastVerified": "2026-09-26",
+            "description": "DevOps role at VOIS (Vodafone Intelligent Solutions) supporting cloud infrastructure and automation.",
+            "tags": ["devops", "cloud", "vois", "vodafone"]
+        }
+    },
+    "it_support": {
+        "vodafone_technical_support_engineer": {
+            "id": "vodafone_technical_support_engineer",
+            "title": "Technical Support Engineer",
+            "company": "Vodafone Egypt",
+            "companyLogo": None,
+            "category": "IT Support",
+            "subcategory": "Technical Support",
+            "location": "Cairo, Egypt",
+            "country": "Egypt",
+            "city": "Cairo",
             "workType": "On-site",
             "employmentType": "Full Time",
             "contractType": "Permanent",
             "remoteType": "On-site",
-            "postedDate": "2026-08-01",
+            "postedDate": None,
+            "applicationDeadline": None,
+            "salary": "Not disclosed",
+            "salaryMin": None,
+            "salaryMax": None,
+            "salaryCurrency": "EGP",
+            "salaryPeriod": None,
+            "salaryType": "Not disclosed",
+            "salarySource": "Not disclosed",
+            "experienceLevel": "Entry-Mid",
+            "experienceYears": "Not disclosed",
+            "education": "Not disclosed",
+            "requirements": [
+                "Diagnose and resolve technical faults for customers",
+                "Strong communication and troubleshooting skills"
+            ],
+            "skills": ["Technical Support", "Troubleshooting", "Customer Communication"],
+            "responsibilities": [
+                "Act as first technical point of contact for customers",
+                "Diagnose fault-related cases and escalate per company procedure",
+                "Document troubleshooting and case management actions"
+            ],
+            "documentsRequired": ["CV"],
+            "applicationMethod": "Apply Online",
+            "contactEmail": None,
+            "contactPhone": None,
+            "contactPerson": None,
+            "applyUrl": "https://wuzzuf.net/jobs/p/176163-Technical-Support-Engineer-Vodafone-Cairo-Egypt",
+            "sourceUrl": "https://wuzzuf.net/jobs/p/176163-Technical-Support-Engineer-Vodafone-Cairo-Egypt",
+            "sourceName": "Wuzzuf",
+            "status": "active",
+            "verified": True,
+            "lastVerified": "2026-09-26",
+            "description": "Technical support role at Vodafone Egypt handling customer-facing technical fault diagnosis and resolution.",
+            "tags": ["it support", "technical support", "vodafone"]
+        },
+        "vodafone_service_desk_engineer": {
+            "id": "vodafone_service_desk_engineer",
+            "title": "Service Desk Engineer",
+            "company": "Vodafone Egypt",
+            "companyLogo": None,
+            "category": "IT Support",
+            "subcategory": "Service Desk",
+            "location": "Cairo, Egypt",
+            "country": "Egypt",
+            "city": "Cairo",
+            "workType": "On-site",
+            "employmentType": "Full Time",
+            "contractType": "Permanent",
+            "remoteType": "On-site",
+            "postedDate": None,
             "applicationDeadline": None,
             "salary": "Not disclosed",
             "salaryMin": None,
@@ -250,105 +333,39 @@ JOB_MARKET_SEED_DATA = {
             "salaryType": "Not disclosed",
             "salarySource": "Not disclosed",
             "experienceLevel": "Entry-Level",
-            "experienceYears": "0-2",
-            "education": "Bachelor's degree in Accounting, Finance or related field",
+            "experienceYears": "Not disclosed",
+            "education": "Not disclosed",
             "requirements": [
-                "Bachelor's degree in Accounting, Finance or related field",
-                "0-2 years experience",
-                "Strong academic performance",
-                "Accounting principles",
-                "Microsoft Excel",
-                "Pivot Tables",
-                "VLOOKUP",
-                "English",
-                "Report writing"
+                "First point of contact for customers seeking technical assistance by phone or email",
+                "Remote troubleshooting using diagnostic techniques"
             ],
-            "skills": ["Accounting", "Excel", "Pivot Tables", "VLOOKUP", "Reporting"],
+            "skills": ["Service Desk", "Remote Troubleshooting", "IT Products & Services"],
             "responsibilities": [
-                "Support accounting operations and report preparation",
-                "Maintain financial records and data accuracy",
-                "Assist with reconciliations and operational reporting"
-            ],
-            "documentsRequired": ["CV"],
-            "applicationMethod": "Email application",
-            "contactEmail": "careers@itida.gov.eg",
-            "contactPhone": None,
-            "contactPerson": None,
-            "applyUrl": "https://itida.gov.eg/",
-            "sourceUrl": "https://itida.gov.eg/",
-            "sourceName": "ITIDA Careers",
-            "status": "active",
-            "verified": True,
-            "lastVerified": "2026-08-31",
-            "description": "Accounting role focused on financial records, reporting, and supporting finance operations in a government-linked technology institution.",
-            "tags": ["accounting", "finance", "excel", "itida", "reporting"]
-        }
-    },
-    "software_engineering": {
-        "capgemini_software_engineer": {
-            "id": "capgemini_software_engineer",
-            "title": "Software Engineer",
-            "company": "Capgemini",
-            "companyLogo": None,
-            "category": "Software Engineering",
-            "subcategory": "Backend / Full Stack",
-            "location": "Cairo, Egypt",
-            "country": "Egypt",
-            "city": "Cairo",
-            "workType": "Hybrid",
-            "employmentType": "Full Time",
-            "contractType": "Permanent",
-            "remoteType": "Hybrid",
-            "postedDate": "2026-08-20",
-            "applicationDeadline": None,
-            "salary": "Not disclosed",
-            "salaryMin": None,
-            "salaryMax": None,
-            "salaryCurrency": "EGP",
-            "salaryPeriod": None,
-            "salaryType": "Not disclosed",
-            "salarySource": "Not disclosed",
-            "experienceLevel": "Professional",
-            "experienceYears": "2+",
-            "education": "Bachelor's degree in Computer Science, Engineering or related field",
-            "requirements": [
-                "Bachelor's degree in Computer Science or related field",
-                "2+ years software engineering experience",
-                "Java, Python, or .NET",
-                "REST APIs",
-                "SQL",
-                "Git",
-                "Problem solving"
-            ],
-            "skills": ["Java", "Python", "SQL", "REST APIs", "Git"],
-            "responsibilities": [
-                "Develop and maintain enterprise software solutions",
-                "Support integration with internal and external services",
-                "Collaborate with cross-functional engineering teams"
+                "Determine the best solution based on the issue and walk the customer through resolution",
+                "Direct unresolved issues to the next level of support",
+                "Record events, problems, and resolutions in logs"
             ],
             "documentsRequired": ["CV"],
             "applicationMethod": "Apply Online",
             "contactEmail": None,
             "contactPhone": None,
             "contactPerson": None,
-            "applyUrl": "https://www.capgemini.com/careers/",
-            "sourceUrl": "https://www.capgemini.com/careers/",
-            "sourceName": "Capgemini Careers",
+            "applyUrl": "https://wuzzuf.net/jobs/p/160562-Service-Desk-Engineer-Vodafone-Cairo-Egypt",
+            "sourceUrl": "https://wuzzuf.net/jobs/p/160562-Service-Desk-Engineer-Vodafone-Cairo-Egypt",
+            "sourceName": "Wuzzuf",
             "status": "active",
             "verified": True,
-            "lastVerified": "2026-08-31",
-            "description": "Software engineering opportunity for building scalable enterprise solutions and collaborating with distributed teams.",
-            "tags": ["software", "engineering", "java", "python", "capgemini"]
-        }
-    },
-    "sales": {
-        "bosta_sales_specialist": {
-            "id": "bosta_sales_specialist",
-            "title": "Sales Specialist",
-            "company": "Bosta",
+            "lastVerified": "2026-09-26",
+            "description": "Entry-level service desk role at Vodafone Egypt providing first-line technical support over phone and email.",
+            "tags": ["it support", "service desk", "vodafone", "entry level"]
+        },
+        "vois_application_support_engineer": {
+            "id": "vois_application_support_engineer",
+            "title": "Application Support Engineer",
+            "company": "VOIS Egypt (Vodafone)",
             "companyLogo": None,
-            "category": "Sales",
-            "subcategory": "Business Development",
+            "category": "IT Support",
+            "subcategory": "Application Support",
             "location": "Cairo, Egypt",
             "country": "Egypt",
             "city": "Cairo",
@@ -356,7 +373,7 @@ JOB_MARKET_SEED_DATA = {
             "employmentType": "Full Time",
             "contractType": "Permanent",
             "remoteType": "On-site",
-            "postedDate": "2026-08-15",
+            "postedDate": None,
             "applicationDeadline": None,
             "salary": "Not disclosed",
             "salaryMin": None,
@@ -365,91 +382,30 @@ JOB_MARKET_SEED_DATA = {
             "salaryPeriod": None,
             "salaryType": "Not disclosed",
             "salarySource": "Not disclosed",
-            "experienceLevel": "Junior-Mid",
-            "experienceYears": "1+",
-            "education": "Bachelor's degree preferred",
+            "experienceLevel": "Entry-Mid",
+            "experienceYears": "Not disclosed",
+            "education": "Not disclosed",
             "requirements": [
-                "Bachelor's degree preferred",
-                "1+ years sales experience",
-                "Strong communication skills",
-                "Customer relationship management",
-                "Negotiation"
+                "Application-level troubleshooting and support",
+                "Understanding of IT/software development fundamentals"
             ],
-            "skills": ["Sales", "Negotiation", "CRM", "Customer Service"],
+            "skills": ["Application Support", "IT Services", "Troubleshooting"],
             "responsibilities": [
-                "Drive sales pipeline and customer engagement",
-                "Maintain client relationships and follow-ups",
-                "Support operational sales targets"
+                "Provide application support within VOIS's IT services function"
             ],
             "documentsRequired": ["CV"],
             "applicationMethod": "Apply Online",
             "contactEmail": None,
             "contactPhone": None,
             "contactPerson": None,
-            "applyUrl": "https://www.bosta.co/careers",
-            "sourceUrl": "https://www.bosta.co/careers",
-            "sourceName": "Bosta Careers",
+            "applyUrl": "https://wuzzuf.net/jobs/p/70783-Application-Support-Engineer-Vodafone-Cairo-Egypt",
+            "sourceUrl": "https://wuzzuf.net/jobs/p/70783-Application-Support-Engineer-Vodafone-Cairo-Egypt",
+            "sourceName": "Wuzzuf",
             "status": "active",
             "verified": True,
-            "lastVerified": "2026-08-31",
-            "description": "Sales specialist role with focus on business development, client relationships, and revenue growth.",
-            "tags": ["sales", "crm", "b2b", "bosta"]
-        }
-    },
-    "marketing": {
-        "raya_marketing_specialist": {
-            "id": "raya_marketing_specialist",
-            "title": "Marketing Specialist",
-            "company": "Raya",
-            "companyLogo": None,
-            "category": "Marketing",
-            "subcategory": "Digital Marketing",
-            "location": "Cairo, Egypt",
-            "country": "Egypt",
-            "city": "Cairo",
-            "workType": "Hybrid",
-            "employmentType": "Full Time",
-            "contractType": "Permanent",
-            "remoteType": "Hybrid",
-            "postedDate": "2026-08-18",
-            "applicationDeadline": None,
-            "salary": "Not disclosed",
-            "salaryMin": None,
-            "salaryMax": None,
-            "salaryCurrency": "EGP",
-            "salaryPeriod": None,
-            "salaryType": "Not disclosed",
-            "salarySource": "Not disclosed",
-            "experienceLevel": "Mid",
-            "experienceYears": "2+",
-            "education": "Bachelor's degree in Marketing, Business or related field",
-            "requirements": [
-                "Bachelor's degree in Marketing, Business or related field",
-                "2+ years digital marketing experience",
-                "Social media strategy",
-                "Performance marketing",
-                "Content creation",
-                "Analytics" 
-            ],
-            "skills": ["Digital Marketing", "Social Media", "Google Ads", "Analytics"],
-            "responsibilities": [
-                "Plan and execute digital marketing campaigns",
-                "Drive social media content and performance growth",
-                "Monitor channel analytics and optimize campaigns"
-            ],
-            "documentsRequired": ["CV"],
-            "applicationMethod": "Apply Online",
-            "contactEmail": None,
-            "contactPhone": None,
-            "contactPerson": None,
-            "applyUrl": "https://www.raya.com/careers",
-            "sourceUrl": "https://www.raya.com/careers",
-            "sourceName": "Raya Careers",
-            "status": "active",
-            "verified": True,
-            "lastVerified": "2026-08-31",
-            "description": "Marketing specialist role covering digital marketing, campaign execution, social media, and optimization.",
-            "tags": ["marketing", "digital", "social media", "raya"]
+            "lastVerified": "2026-09-26",
+            "description": "Application support role at VOIS (Vodafone Intelligent Solutions), Vodafone's global IT services arm.",
+            "tags": ["it support", "application support", "vois", "vodafone"]
         }
     }
 }
@@ -472,6 +428,104 @@ for _market_category, _market_jobs in JOB_MARKET_SEED_DATA.items():
         SERVICE_DATA["job_market"][_market_category] = {}
     for _job_id, _job_data in _market_jobs.items():
         SERVICE_DATA["job_market"][_market_category].setdefault(_job_id, _job_data)
+
+
+# ============================================================
+# SEARCH INDEX
+# ============================================================
+# One flat index built once from SERVICE_DATA, covering every
+# section of the app (documents, additional services, medical,
+# jobs, job_market). Home and Search pages both filter this.
+#
+# Note: st.text_input in Streamlit reruns the script when the
+# user presses Enter or the input loses focus, not on every
+# keystroke. So this is "suggest as soon as you finish typing
+# a few letters and hit Enter", not literal live-as-you-type.
+# The placeholder text below reflects that.
+
+def build_search_index():
+    index = []
+
+    index.append({"title": "🛂 استخراج جواز سفر", "keywords": ["جواز", "باسبور", "passport", "سفر"], "target": "passport"})
+    index.append({"title": "🪪 بطاقة الرقم القومي", "keywords": ["بطاقة", "رقم قومي", "id", "الرقم القومي"], "target": "id"})
+    index.append({"title": "📋 برنت تأميني", "keywords": ["تأمين", "تأمينات", "برنت", "insurance"], "target": "insurance"})
+
+    for key, s in SERVICE_DATA.get("additional_services", {}).items():
+        if not isinstance(s, dict):
+            continue
+        index.append({
+            "title": f"{s.get('icon', '📄')} {s.get('title', key)}",
+            "keywords": [key, s.get("title", "")],
+            "target": f"additional:{key}",
+        })
+
+    for key, s in SERVICE_DATA.get("medical_services", {}).items():
+        if not isinstance(s, dict):
+            continue
+        index.append({
+            "title": f"{s.get('icon', '🩺')} {s.get('title', key)}",
+            "keywords": [key, s.get("title", "")],
+            "target": f"medical:{key}",
+        })
+
+    job_categories = {
+        "companies": "job_company",
+        "restaurants": "job_restaurant",
+        "hotels": "job_hotel",
+        "online_platforms": "job_online",
+    }
+    for cat, prefix in job_categories.items():
+        for key, c in SERVICE_DATA.get("jobs", {}).get(cat, {}).items():
+            if not isinstance(c, dict):
+                continue
+            index.append({
+                "title": f"{c.get('icon', '🏢')} {c.get('title', key)}",
+                "keywords": [key, c.get("title", ""), c.get("sector", "")],
+                "target": f"{prefix}:{key}",
+            })
+
+    for cat, jobs in SERVICE_DATA.get("job_market", {}).items():
+        if not isinstance(jobs, dict):
+            continue
+        for jid, job in jobs.items():
+            if not isinstance(job, dict):
+                continue
+            index.append({
+                "title": f"💼 {job.get('title', '')} — {job.get('company', '')}",
+                "keywords": [job.get("title", ""), job.get("company", ""), cat],
+                "target": f"job_market:{jid}",
+            })
+
+    return index
+
+
+SEARCH_INDEX = build_search_index()
+
+
+def search_matches(query, limit=6):
+    """Return up to `limit` search-index items whose title/keywords contain query."""
+    query = (query or "").strip().lower()
+    if len(query) < 2:
+        return []
+    results = []
+    for item in SEARCH_INDEX:
+        haystack = " ".join([item["title"]] + [str(k) for k in item["keywords"]]).lower()
+        if query in haystack:
+            results.append(item)
+    return results[:limit]
+
+
+def render_search_suggestions(query, key_prefix):
+    """Render live-suggest buttons for a search query. Shared by Home and Search pages."""
+    matches = search_matches(query)
+    if matches:
+        for i, item in enumerate(matches):
+            if st.button(item["title"], key=f"{key_prefix}_{i}_{item['target']}", use_container_width=True):
+                st.session_state.selected_document = item["target"]
+                go("document_details")
+    elif len(query.strip()) >= 2:
+        st.info("مش لاقي الخدمة دي حاليًا.")
+
 
 # ============================================================
 # PAGE CONFIG
@@ -574,10 +628,10 @@ TEXTS = {
         "arabic": "العربية",
         "english": "English",
         "brand": "قبل ما تروح",
-        "tagline": "اعرف كل حاجة قبل ما تتحرك.",
+        "tagline": "بوصلتك الرسمية قبل كل معاملة.",
         "hero_subtitle": "اعرف كل حاجة قبل ما تنزل من البيت.",
         "search": "بحث",
-        "search_placeholder": "🔎 ابحث عن خدمة، ورقة، معاملة أو مكان...",
+        "search_placeholder": "🔎 اكتب واضغط Enter للبحث (جواز، بطاقة، فيش جنائي، فودافون...)",
         "what_to_do": "ماذا تريد أن تفعل؟",
         "popular": "خدمات شائعة",
         "documents": "استخراج أوراق",
@@ -600,10 +654,10 @@ TEXTS = {
         "arabic": "العربية",
         "english": "English",
         "brand": "Before You Go",
-        "tagline": "Know everything before you head out.",
+        "tagline": "Your official compass before every transaction.",
         "hero_subtitle": "Know everything before leaving home.",
         "search": "Search",
-        "search_placeholder": "🔎 Search for a service, document, transaction, or place...",
+        "search_placeholder": "🔎 Type and press Enter to search (passport, ID, jobs...)",
         "what_to_do": "What would you like to do?",
         "popular": "Popular services",
         "documents": "Get documents",
@@ -1991,6 +2045,9 @@ with st.sidebar:
     if st.button("💬 مساعد ذكي", key="nav_chatbot", use_container_width=True):
         go("chatbot")
 
+    if st.button("ℹ️ عن المشروع", key="nav_about", use_container_width=True):
+        go("about")
+
     st.divider()
 
     st.caption("Prototype 0.1")
@@ -2014,7 +2071,7 @@ if st.session_state.page == "home":
     st.write("")
 
     # --------------------------------------------------------
-    # SEARCH
+    # SEARCH (live-suggest, covers the whole app)
     # --------------------------------------------------------
 
     search = st.text_input(
@@ -2025,45 +2082,7 @@ if st.session_state.page == "home":
     )
 
     if search:
-
-        if "جواز" in search:
-
-            st.info("وجدنا: 🛂 استخراج جواز سفر")
-
-            if st.button(
-                "🛂 فتح خدمة استخراج جواز السفر",
-                key="search_passport_home"
-            ):
-                st.session_state.selected_document = "passport"
-                go("document_details")
-
-        elif "بطاقة" in search:
-
-            st.info("وجدنا: 🪪 بطاقة الرقم القومي")
-
-            if st.button(
-                "🪪 فتح خدمة بطاقة الرقم القومي",
-                key="search_id_home"
-            ):
-                st.session_state.selected_document = "id"
-                go("document_details")
-
-        elif "تأمين" in search:
-
-            st.info("وجدنا: 📋 برنت تأميني")
-
-            if st.button(
-                "📋 فتح خدمة البرنت التأميني",
-                key="search_insurance_home"
-            ):
-                st.session_state.selected_document = "insurance"
-                go("document_details")
-
-        else:
-
-            st.info(
-                    "الخدمة دي لسه مش موجودة في النسخة الحالية."
-                )
+        render_search_suggestions(search, key_prefix="search_home")
 
     # --------------------------------------------------------
     # MAIN CATEGORIES
@@ -3394,7 +3413,10 @@ elif st.session_state.page == "document_details":
 
         st.divider()
 
-        education_keys = ["تنسيق المدارس الثانوية"]
+        education_keys = [
+            "تنسيق المدارس الثانوية",
+            "معادلة الشهادات",
+        ]
         additional_services = SERVICE_DATA.get("additional_services", {})
 
         found_any = False
@@ -3434,6 +3456,8 @@ elif st.session_state.page == "document_details":
             "شهادة الميلاد",
             "شهادة التحركات",
             "القيد العائلي",
+            "شهادة الوفاة",
+            "إعلام الوراثة",
         ]
         additional_services = SERVICE_DATA.get("additional_services", {})
 
@@ -3781,55 +3805,121 @@ elif st.session_state.page == "search":
 
     query = st.text_input(
         "ابحث",
-        placeholder="مثال: جواز سفر"
+        placeholder="اكتب واضغط Enter (جواز، بطاقة، فيش جنائي، فودافون...)"
     )
 
     if query:
-
-        if "جواز" in query:
-
-            if st.button(
-                "🛂 استخراج جاز سفر",
-                key="search_passport",
-                use_container_width=True
-            ):
-
-                st.session_state.selected_document = "passport"
-
-                go("document_details")
+        render_search_suggestions(query, key_prefix="search_page")
 
 
-        elif "بطاقة" in query:
+elif st.session_state.page == "about":
+    st.markdown(
+        '<div class="back-wrapper">',
+        unsafe_allow_html=True
+    )
+    back()
+    st.markdown('</div>', unsafe_allow_html=True)
 
-            if st.button(
-                "🪪 بطاقة الرقم القومي",
-                key="search_id",
-                use_container_width=True
-            ):
+    st.title("ℹ️ عن المشروع")
 
-                st.session_state.selected_document = "id"
+    st.write(
+        "كل التفاصيل اللي محتاجها عشان تفهم \"قبل ما تروح\" في دقيقة."
+    )
 
-                go("document_details")
+    st.markdown(
+        """
+        <div class="info-box">
+            <h3>🎯 المشكلة</h3>
+            <p>
+                كل يوم آلاف الناس بيروحوا مصالح ومكاتب حكومية من غير ما يعرفوا
+                بالظبط المطلوب — ورقة ناقصة، رسوم غلط، أو مكان مش صح — فيضطروا
+                يرجعوا تاني ويضيّعوا وقت ومجهود كان ممكن يتوفر بمعلومة بسيطة
+                قبل ما يتحركوا.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
+    st.markdown(
+        """
+        <div class="info-box">
+            <h3>💡 الحل</h3>
+            <p>
+                "قبل ما تروح" منصة واحدة بتجمع كل المعلومات اللي محتاجها قبل
+                أي معاملة: المستندات المطلوبة، الرسوم، المكان، ومواعيد العمل
+                — من مصادر رسمية موثقة، مع مساعد ذكي بيجاوب على أي سؤال
+                إضافي مش موجود في القاعدة.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
-        elif "تأمين" in query:
+    st.markdown("## ⭐ ليه \"قبل ما تروح\" مختلف؟")
 
-            if st.button(
-                "📋 برنت تأميني",
-                key="search_insurance",
-                use_container_width=True
-            ):
+    diff_col1, diff_col2 = st.columns(2)
 
-                st.session_state.selected_document = "insurance"
+    with diff_col1:
+        st.markdown(
+            """
+            <div class="info-box">
+                <h3>📚 معلومة موثقة</h3>
+                <p>من مصادر رسمية، مش شائعات جروبات فيسبوك.</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
-                go("document_details")
+        st.markdown(
+            """
+            <div class="info-box">
+                <h3>🤖 مساعد ذكي</h3>
+                <p>بيبحث لحظيًا لو المعلومة مش موجودة عندنا.</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
+    with diff_col2:
+        st.markdown(
+            """
+            <div class="info-box">
+                <h3>📍 مكان واحد</h3>
+                <p>بدل ما تدور في مواقع ومصادر متفرقة.</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
-        else:
+        st.markdown(
+            """
+            <div class="info-box">
+                <h3>🔄 يتطور باستمرار</h3>
+                <p>بناءً على مقترحات المستخدمين الحقيقيين.</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
-            st.info(
-                "مش لاقي الخدمة دي حاليًا."
-            )
+    st.markdown(
+        """
+        <div class="info-box">
+            <h3>👤 عن الفريق</h3>
+            <p>
+                المشروع ده اتعمل كجزء من التحضير لمسابقة Startup Teen، بواسطة
+                طالب في مدرسة WE للتكنولوجيا التطبيقية، بهدف حل مشكلة حقيقية
+                بيواجهها ملايين المصريين يوميًا.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.divider()
+
+    st.caption("بوصلتك الرسمية قبل كل معاملة.")
+
 
 
 elif st.session_state.page == "chatbot":
@@ -3839,7 +3929,6 @@ elif st.session_state.page == "chatbot":
     )
     back()
     st.markdown('</div>', unsafe_allow_html=True)
-
     render_chatbot_area()
 
 
@@ -3861,4 +3950,3 @@ if st.session_state.page != "chatbot":
         key="floating_suggestion_button",
         help="اقترح تعديل أو ميزة جديدة",
     )
-    
